@@ -7,6 +7,8 @@ import './styles/scrollbarStyles.css';
 
 import { GET_CHARACTERS_BY_IDS } from './apollo/queries';
 
+import { Loading } from './components/Loading';
+
 export function App() {
   const allStoragedCharacters: Array<any> = JSON.parse(
     localStorage.getItem('allCharacters') || '[]'
@@ -29,7 +31,7 @@ export function App() {
     },
   });
 
-  if (loading) return <p>Loading... </p>;
+  if (loading) return <Loading />;
   if (error) return <p>Error :( </p>;
 
   if (doQuery) {
