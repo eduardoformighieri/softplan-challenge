@@ -8,9 +8,10 @@ import './styles/scrollbarStyles.css';
 import { GET_CHARACTERS_BY_IDS } from './apollo/queries';
 
 import { Loading } from './components/Loading';
+import { Character } from './utils/types';
 
 export function App() {
-  const allStoragedCharacters: Array<any> = JSON.parse(
+  const allStoragedCharacters: Array<Character> = JSON.parse(
     localStorage.getItem('allCharacters') || '[]'
   );
 
