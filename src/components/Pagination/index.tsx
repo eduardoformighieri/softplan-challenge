@@ -5,6 +5,7 @@ import ReactPaginate from 'react-paginate';
 import { GET_NUMBER_OF_CHARACTER_PAGES } from '../../apollo/queries';
 import { Loading } from '../Loading';
 
+import { CharactersList } from '../CharactersList';
 import '../../styles/ReactPaginateStyles.css';
 
 interface PageChangeEvent {
@@ -38,6 +39,7 @@ export function Pagination() {
         containerClassName={'pagination'}
         activeClassName={'active'}
       />
+      <CharactersList page={currentPage} />
     </Flex>
   );
 }
