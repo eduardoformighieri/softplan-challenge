@@ -1,4 +1,5 @@
 import { Flex } from '@chakra-ui/react';
+import { CharacterCard } from '../CharacterCard';
 
 import { Character } from '../../utils/types';
 
@@ -6,8 +7,15 @@ interface CharactersListProps {
   page: number;
 }
 
-function paginate(array: Array<{}>, page_size: number, page_number: number) {
-  return array.slice((page_number - 1) * page_size, page_number * page_size);
+function paginate(
+  charactersArray: Array<Character>,
+  pageSize: number,
+  currentPage: number
+) {
+  return charactersArray.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  );
 }
 
 export function CharactersList({ page }: CharactersListProps) {
@@ -15,7 +23,13 @@ export function CharactersList({ page }: CharactersListProps) {
     localStorage.getItem('allCharacters') || '[]'
   );
 
-  const paginated: any = paginate(allStoragedCharacters, 20, page);
+  const paginated: Array<Character> = paginate(allStoragedCharacters, 20, page);
 
-  return <Flex flexWrap="wrap"></Flex>;
+  return (
+    <Flex flexWrap="wrap">
+      {paginated.map((character: Character) => (
+        <CharacterCard key={character.id} character={character} />
+      ))}
+    </Flex>
+  );
 }
