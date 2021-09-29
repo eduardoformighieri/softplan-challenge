@@ -17,3 +17,13 @@ export const GET_CHARACTERS_BY_IDS = gql`
     }
   }
 `;
+
+export const GET_NUMBER_OF_CHARACTER_PAGES = gql`
+  query getNumberOfCharactersPages {
+    characters {
+      info {
+        pages
+      }
+    }
+  }
+`;
