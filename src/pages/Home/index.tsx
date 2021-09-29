@@ -1,4 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
+import { Pagination } from '../../components/Pagination';
 
 export function Home() {
   return (
@@ -8,6 +9,7 @@ export function Home() {
       <Text fontFamily="RobotoBold" fontSize="4xl">
         Lista de personagens
       </Text>
+      <Pagination />
     </Box>
   );
 }
