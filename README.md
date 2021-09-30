@@ -2,15 +2,25 @@
 
 ## This project was made to show some of my developer skills.
 
+### Used API
+
+https://rickandmortyapi.com/documentation/#graphql
+
 ## Demo:
 
 ### Navigate through character pages
 
 ![showing-navigation](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/navigation.gif)
 
+### Edit characters
+
 ![showing-edition](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/edit.gif)
 
+### Search characters
+
 ![showing-search](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/search.gif)
+
+### Responsive
 
 ![showing-responsive](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/respon.gif)
 
@@ -29,10 +39,6 @@
 - [ ] Create a pipeline in GitLab
 - [x] Use Apollo Client instead of Redux
 - [x] Design da interface
-
-### The API
-
-https://rickandmortyapi.com/documentation/#graphql
 
 ## Technologies
 
