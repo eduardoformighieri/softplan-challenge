@@ -20,14 +20,14 @@ export function CharacterCard({ character }: CharacterCardProps) {
       flexDirection="column"
       textAlign="left"
       onClick={() => handleClick(character.id)}
-      w={320}
+      w={{ base: 280, md: 320 }}
       bg="gray.700"
       mt="4"
       mx="auto">
       <Image
         borderTopRightRadius="4"
         borderLeftRightRadius="4"
-        w={320}
+        w={{ base: 280, md: 320 }}
         src={character.image}
         alt={character.name}
       />
