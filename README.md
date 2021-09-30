@@ -4,6 +4,16 @@
 
 ## Demo:
 
+### Navigate through character pages
+
+![showing-navigation](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/navigation.gif)
+
+![showing-edition](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/edit.gif)
+
+![showing-search](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/search.gif)
+
+![showing-responsive](https://github.com/eduardoformighieri/softplan-challenge/blob/main/public/demo/respon.gif)
+
 ## Requirements:
 
 - [x] Use React
