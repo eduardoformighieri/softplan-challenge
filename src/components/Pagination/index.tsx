@@ -3,7 +3,6 @@ import { Flex } from '@chakra-ui/react';
 import { useQuery } from '@apollo/client';
 import ReactPaginate from 'react-paginate';
 import { GET_NUMBER_OF_CHARACTER_PAGES } from '../../apollo/queries';
-import { Loading } from '../Loading';
 
 import { CharactersList } from '../CharactersList';
 import '../../styles/ReactPaginateStyles.css';
@@ -16,7 +15,7 @@ export function Pagination() {
   const [currentPage, setCurrentPage] = useState(1);
   const { error, loading, data } = useQuery(GET_NUMBER_OF_CHARACTER_PAGES);
 
-  if (loading) return <Loading />;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   const pages = data.characters.info.pages - 1;

@@ -26,7 +26,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
       mx="auto">
       <Image
         borderTopRightRadius="4"
-        borderLeftRightRadius="4"
+        borderTopLeftRadius="4"
         w={{ base: 280, md: 320 }}
         src={character.image}
         alt={character.name}

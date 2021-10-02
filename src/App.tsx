@@ -7,7 +7,6 @@ import './styles/scrollbarStyles.css';
 
 import { GET_CHARACTERS_BY_IDS } from './apollo/queries';
 
-import { Loading } from './components/Loading';
 import { Character } from './utils/types';
 
 export function App() {
@@ -32,7 +31,7 @@ export function App() {
     },
   });
 
-  if (loading) return <Loading />;
+  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :( </p>;
 
   if (doQuery) {

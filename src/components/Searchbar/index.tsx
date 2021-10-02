@@ -88,7 +88,7 @@ export function Searchbar() {
           <Input
             value={inputValue}
             focusBorderColor="#38B2AC"
-            placeholder="Procurar personagem"
+            placeholder="Procurar personagem..."
             onChange={handleInputChange}
           />
         </InputGroup>

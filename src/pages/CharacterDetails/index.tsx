@@ -23,7 +23,7 @@ export function CharacterDetails() {
   const { id }: RouteParams = useParams();
 
   const character: any = allStoragedCharacters.find(
-    (character) => character.id === id
+    (character) => character?.id === id
   );
 
   function handleClick() {
@@ -95,22 +95,22 @@ export function CharacterDetails() {
         mx="auto">
         <Image
           borderTopRightRadius="4"
-          borderLeftRightRadius="4"
+          borderTopLeftRadius="4"
           w={320}
-          src={character.image}
-          alt={character.name}
+          src={character?.image}
+          alt={character?.name}
         />
 
         <Box p="4">
           <Text pt="4" color="gray.100" fontFamily="RobotoBlack" fontSize="4xl">
-            {character.name}
+            {character?.name}
           </Text>
           <Flex pt="3" fontSize="lg" flexWrap="wrap">
             <Text pr="2" fontFamily="RobotoMedium" color="gray.500">
               Status:
             </Text>
             <Text fontFamily="Roboto" color="gray.300">
-              {character.status}
+              {character?.status}
             </Text>
           </Flex>
           <Flex pt="2" fontSize="lg" flexWrap="wrap">
@@ -118,7 +118,7 @@ export function CharacterDetails() {
               Espécie:
             </Text>
             <Text fontFamily="Roboto" color="gray.300">
-              {character.species}
+              {character?.species}
             </Text>
           </Flex>
           <Flex pt="2" fontSize="lg" flexWrap="wrap">
@@ -126,7 +126,7 @@ export function CharacterDetails() {
               Origem:
             </Text>
             <Text fontFamily="Roboto" color="gray.300">
-              {character.origin.name}
+              {character?.origin.name}
             </Text>
           </Flex>
           <Flex pt="2" pb="4" fontSize="lg" flexWrap="wrap">
@@ -134,7 +134,7 @@ export function CharacterDetails() {
               Última vez visto em:
             </Text>
             <Text fontFamily="Roboto" color="gray.300">
-              {character.location.name}
+              {character?.location.name}
             </Text>
           </Flex>
         </Box>
