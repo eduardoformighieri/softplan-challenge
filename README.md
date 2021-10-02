@@ -1,6 +1,6 @@
 # [Softplan](https://www.softplan.com.br/) challenge
 
-## This project was made to show some of my developer skills.
+## This project was made to show some of my developer skills. You can check below for more information as consumed API, demonstration, requirements, differentials and used technologies.
 
 ### Used API
 
@@ -30,7 +30,7 @@ https://rickandmortyapi.com/documentation/#graphql
 - [x] Use create-react-app to start project
 - [ ] ~~Use redux for state management~~ (Apollo Client used)
 - [x] Use react-router for page switch
-- [ ] Use @testing-library/react for testing
+- [x] Use @testing-library/react for testing
 
 ## Differentials:
 
