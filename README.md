@@ -1,8 +1,8 @@
-# [Softplan](https://www.softplan.com.br/) challenge
+# Softplayer Frontend Apply
 
-## This project was made to show some of my developer skills. You can check below for more information as consumed API, demonstration, requirements, differentials and used technologies.
+## This project was developed based on a selective processing for a job application at the company [Softplan](https://www.softplan.com.br/), located in Brazil, which established the requirements for this task, named "Softplayer Frontend Apply". You can check below for more information as consumed API, app demonstration, requirements, differentials and used technologies.
 
-### Used API
+### Consumed API
 
 https://rickandmortyapi.com/documentation/#graphql
 
